@@ -1,0 +1,15 @@
+#
+# Connection
+#
+broker: !secret MQTTHostname
+port: !secret MQTTPort
+certificate: /secrets/MQTTCA.pem
+#
+# Credentials
+#
+username: !secret MQTTUsername
+password: !secret MQTTPassword
+
+discovery: true
+# username: !secret mqtt_username
+# password: !secret mqtt_password

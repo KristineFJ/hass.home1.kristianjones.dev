@@ -1,0 +1,13 @@
+homeassistant:
+  name: 6FifthAve
+  latitude: !secret HomeLatitude
+  longitude: !secret HomeLongitude
+  elevation: 383
+  unit_system: metric
+  currency: CAD
+  time_zone: America/Winnipeg
+  internal_url: !secret InternalURL
+  external_url: !secret ExternalURL
+
+  packages:
+    integrations: !include_dir_named Integrations/
