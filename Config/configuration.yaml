@@ -11,3 +11,5 @@ homeassistant:
 
   packages:
     integrations: !include_dir_named Integrations/
+
+frontend:
