@@ -3,7 +3,7 @@
 #
 broker: !secret MQTTHostname
 port: !secret MQTTPort
-certificate: /secrets/MQTTCA.pem
+certificate: /secrets/TLS/MQTT/CA.pem
 #
 # Credentials
 #
