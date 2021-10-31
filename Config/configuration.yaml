@@ -11,3 +11,13 @@ homeassistant:
 
   packages:
     integrations: !include_dir_named Integrations/
+
+http:
+  ssl_certificate: /secrets/TLS/Server/Cert.pem
+  ssl_key: /secrets/TLS/Server/Key.pem
+  use_x_forwarded_for: true
+  trusted_proxies: 
+    - 172.16.0.0/12
+
+auth_header:
+  username_header: X-Pomerium-Claim-email
